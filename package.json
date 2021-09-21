@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint **/*.ts --fix",
-    "test": "eslint **/*.ts && jest && yarn build && size-limit",
+    "test": "eslint **/*.ts && jest && yarn build",
     "prepare": "yarn build"
   },
   "author": "Bang The Table",
@@ -21,7 +21,6 @@
     "@types/jsonapi-serializer": "^3.6.3",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
-    "bundlesize": "^0.18.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
@@ -29,24 +28,9 @@
     "jest": "^27.2.1",
     "nock": "^12.0.3",
     "prettier": "^2.0.4",
-    "size-limit": "1.0.1",
     "ts-jest": "^27.0.5",
     "typescript": "^3.8.3"
   },
-  "size-limit": [
-    {
-      "path": "./dist/model.js",
-      "limit": "18 KB"
-    },
-    {
-      "path": "./dist/http-adapter.js",
-      "limit": "3.5 kB"
-    },
-    {
-      "path": "./dist/jsonapi-error.js",
-      "limit": "3.5 kB"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/itsfadnis/jsonapi-client.git"

@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "A convenient module to consume a jsonapi service",
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-fetch": "^3.0.0",
     "jsonapi-serializer": "git+https://github.com/itsfadnis/jsonapi-serializer.git"
   },
   "devDependencies": {
